@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 110" width="100%" height="100%">
+  <defs>
+    <filter id="m-shadow" x="-5%" y="-15%" width="110%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <style>
+    .f-met { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
+    .m-num { font-size: 32px; font-weight: 800; fill: #2563eb; letter-spacing: -0.5px; }
+    .m-sub { font-size: 12.5px; font-weight: 600; fill: #0f172a; }
+    .m-sub2 { font-size: 11px; font-weight: 400; fill: #64748b; }
+  </style>
+
+  <rect x="2" y="2" width="896" height="106" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#m-shadow)" />
+
+  <!-- Metric 1 -->
+  <g transform="translate(42, 22)">
+    <text x="0" y="30" class="f-met m-num">80-90%</text>
+    <text x="0" y="52" class="f-met m-sub">Manual Time Saved</text>
+    <text x="0" y="68" class="f-met m-sub2">Eliminating repetitive busywork</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="235" y1="20" x2="235" y2="90" stroke="#f1f5f9" stroke-width="1.5" />
+
+  <!-- Metric 2 -->
+  <g transform="translate(265, 22)">
+    <text x="0" y="30" class="f-met m-num">24/7</text>
+    <text x="0" y="52" class="f-met m-sub">Continuous Execution</text>
+    <text x="0" y="68" class="f-met m-sub2">Zero-downtime reliability</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="455" y1="20" x2="455" y2="90" stroke="#f1f5f9" stroke-width="1.5" />
+
+  <!-- Metric 3 -->
+  <g transform="translate(485, 22)">
+    <text x="0" y="30" class="f-met m-num">Zero</text>
+    <text x="0" y="52" class="f-met m-sub">Extra Hires Needed</text>
+    <text x="0" y="68" class="f-met m-sub2">Scale operations without payroll bloat</text>
+  </g>
+
+  <!-- Divider 3 -->
+  <line x1="685" y1="20" x2="685" y2="90" stroke="#f1f5f9" stroke-width="1.5" />
+
+  <!-- Metric 4 -->
+  <g transform="translate(715, 22)">
+    <text x="0" y="30" class="f-met m-num">10x</text>
+    <text x="0" y="52" class="f-met m-sub">Workflow Efficiency</text>
+    <text x="0" y="68" class="f-met m-sub2">Seamless Web &amp; Android integration</text>
+  </g>
+</svg>

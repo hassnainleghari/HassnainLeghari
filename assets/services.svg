@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="100%">
+  <defs>
+    <filter id="card-shadow" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <style>
+    .f-app { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
+    .card-title { font-size: 17px; font-weight: 700; fill: #0f172a; }
+    .card-desc  { font-size: 13px; fill: #475569; line-height: 1.5; font-weight: 400; }
+    .tag-text   { font-size: 11px; font-weight: 600; fill: #2563eb; }
+  </style>
+
+  <!-- Service 1: Workflow Automation -->
+  <g transform="translate(0, 0)">
+    <rect width="286" height="225" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#card-shadow)" />
+    <!-- Blue Icon Badge -->
+    <circle cx="38" cy="40" r="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+    <text x="29" y="47" font-size="18">⚡</text>
+    <text x="68" y="45" class="f-app card-title">Business Automation</text>
+    
+    <text x="22" y="85" class="f-app card-desc">
+      <tspan x="22" dy="0">• Autonomous 24/7 API pipelines</tspan>
+      <tspan x="22" dy="21">• CRM, ERP &amp; database syncing</tspan>
+      <tspan x="22" dy="21">• Eliminate manual busywork &amp; data entry</tspan>
+      <tspan x="22" dy="21">• Custom AI agents &amp; webhook logic</tspan>
+    </text>
+
+    <!-- Pill -->
+    <rect x="22" y="180" width="242" height="26" rx="13" fill="#eff6ff" />
+    <text x="32" y="197" class="f-app tag-text">Python • n8n • Zapier • Make • APIs</text>
+  </g>
+
+  <!-- Service 2: Web Engineering -->
+  <g transform="translate(307, 0)">
+    <rect width="286" height="225" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#card-shadow)" />
+    <!-- Blue Icon Badge -->
+    <circle cx="38" cy="40" r="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+    <text x="29" y="46" font-size="17">🌐</text>
+    <text x="68" y="45" class="f-app card-title">Web Development</text>
+    
+    <text x="22" y="85" class="f-app card-desc">
+      <tspan x="22" dy="0">• Fast, conversion-focused web apps</tspan>
+      <tspan x="22" dy="21">• Real-time analytics dashboards</tspan>
+      <tspan x="22" dy="21">• Enterprise REST &amp; GraphQL backends</tspan>
+      <tspan x="22" dy="21">• Scalable full-stack SaaS architecture</tspan>
+    </text>
+
+    <!-- Pill -->
+    <rect x="22" y="180" width="242" height="26" rx="13" fill="#eff6ff" />
+    <text x="32" y="197" class="f-app tag-text">Next.js • React • Node.js • TypeScript</text>
+  </g>
+
+  <!-- Service 3: Android & Mobile Apps -->
+  <g transform="translate(614, 0)">
+    <rect width="286" height="225" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#card-shadow)" />
+    <!-- Blue Icon Badge -->
+    <circle cx="38" cy="40" r="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+    <text x="29" y="46" font-size="17">📱</text>
+    <text x="68" y="45" class="f-app card-title">Android &amp; Mobile</text>
+    
+    <text x="22" y="85" class="f-app card-desc">
+      <tspan x="22" dy="0">• Native &amp; hybrid mobile experiences</tspan>
+      <tspan x="22" dy="21">• Offline-first caching &amp; cloud sync</tspan>
+      <tspan x="22" dy="21">• Apple-grade fluid animations &amp; UX</tspan>
+      <tspan x="22" dy="21">• Push notifications &amp; payments</tspan>
+    </text>
+
+    <!-- Pill -->
+    <rect x="22" y="180" width="242" height="26" rx="13" fill="#eff6ff" />
+    <text x="32" y="197" class="f-app tag-text">Kotlin • Flutter • Android Studio • Dart</text>
+  </g>
+</svg>

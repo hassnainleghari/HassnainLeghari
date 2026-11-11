@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Grid Pattern -->
+    <pattern id="subtle-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e2e8f0" stroke-width="0.8" />
+    </pattern>
+
+    <!-- Apple Drop Shadows -->
+    <filter id="soft-shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+    <filter id="phone-depth" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.14" />
+    </filter>
+    <filter id="btn-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2563eb" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <style>
+    .f-sans { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, sans-serif; }
+    @keyframes pulse-beacon {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.4; }
+    }
+    @keyframes chart-glow {
+      0%, 100% { opacity: 0.95; }
+      50% { opacity: 0.65; }
+    }
+    .beacon { animation: pulse-beacon 2s infinite ease-in-out; transform-origin: center; transform-box: fill-box; }
+    .pulse-line { animation: chart-glow 2.5s infinite ease-in-out; }
+  </style>
+
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="#ffffff" />
+  <rect width="1200" height="360" rx="16" fill="url(#subtle-grid)" />
+
+  <!-- Right Blue Angular Shape (Apple Minimalist Geometry) -->
+  <path d="M 780 0 L 1200 0 L 1200 360 L 730 360 Z" fill="#2563eb" />
+
+  <!-- Outer Border -->
+  <rect width="1198" height="358" x="1" y="1" rx="16" fill="none" stroke="#e2e8f0" stroke-width="1.5" />
+
+  <!-- ================= LEFT: TEXT & BRANDING ================= -->
+
+  <!-- Top CTA Button Pill -->
+  <g transform="translate(48, 30)">
+    <rect x="0" y="0" width="180" height="38" rx="19" fill="#2563eb" filter="url(#btn-shadow)" />
+    <text x="22" y="24" class="f-sans" font-size="14" font-weight="600" fill="#ffffff" letter-spacing="0.2">
+      Let’s build — DM me →
+    </text>
+  </g>
+
+  <!-- Hand-drawn Style Arrow pointing to CTA -->
+  <path d="M 238 50 C 265 52, 290 85, 335 80" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 238 50 L 249 44 M 238 50 L 246 58" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Status Indicator: Open to new projects -->
+  <g transform="translate(48, 82)">
+    <circle class="beacon" cx="7" cy="0" r="5" fill="#2563eb" />
+    <circle cx="7" cy="0" r="3.5" fill="#2563eb" />
+    <text x="22" y="4" class="f-sans" font-size="12.5" font-weight="600" fill="#0f172a">
+      Open to new projects
+    </text>
+  </g>
+
+  <!-- Eyebrow Category -->
+  <text x="48" y="138" class="f-sans" font-size="12.5" font-weight="700" fill="#2563eb" letter-spacing="2.2">
+    BUSINESS AUTOMATION
+  </text>
+
+  <!-- Main Headline -->
+  <text x="48" y="180" class="f-sans" font-size="38" font-weight="800" fill="#0f172a" letter-spacing="-1">
+    Automate the busywork.
+  </text>
+  <text x="48" y="224" class="f-sans" font-size="38" font-weight="800" fill="#2563eb" letter-spacing="-1">
+    Grow the business.
+  </text>
+
+  <!-- Subheadline -->
+  <text x="48" y="260" class="f-sans" font-size="15" font-weight="500" fill="#334155">
+    I Help Businesses Automate Workflows &amp; Scale Without Extra Hires.
+  </text>
+
+  <!-- Apple Feature Pills -->
+  <g transform="translate(48, 288)">
+    <!-- Pill 1: Web Apps -->
+    <g transform="translate(0, 0)">
+      <rect width="116" height="34" rx="17" fill="#ffffff" stroke="#2563eb" stroke-width="1.2" />
+      <text x="16" y="21" class="f-sans" font-size="13" font-weight="600" fill="#0f172a">🌐 Web Apps</text>
+    </g>
+    <!-- Pill 2: Android Apps -->
+    <g transform="translate(126, 0)">
+      <rect width="138" height="34" rx="17" fill="#ffffff" stroke="#2563eb" stroke-width="1.2" />
+      <text x="16" y="21" class="f-sans" font-size="13" font-weight="600" fill="#0f172a">📱 Android Apps</text>
+    </g>
+    <!-- Pill 3: Automation -->
+    <g transform="translate(274, 0)">
+      <rect width="128" height="34" rx="17" fill="#ffffff" stroke="#2563eb" stroke-width="1.2" />
+      <text x="16" y="21" class="f-sans" font-size="13" font-weight="600" fill="#0f172a">⚡ Automation</text>
+    </g>
+    <!-- Pill 4: Entrepreneur -->
+    <g transform="translate(412, 0)">
+      <rect width="136" height="34" rx="17" fill="#ffffff" stroke="#2563eb" stroke-width="1.2" />
+      <text x="16" y="21" class="f-sans" font-size="13" font-weight="600" fill="#0f172a">💼 Entrepreneur</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT: APPLE DEVICE MOCKUPS ================= -->
+  <!-- Anchored safely inside x=750 to 1180 to never overlap text -->
+
+  <!-- Mac Browser Window Mockup -->
+  <g transform="translate(760, 48)" filter="url(#soft-shadow)">
+    <!-- Browser Card Body -->
+    <rect width="280" height="236" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    
+    <!-- Window Traffic Lights -->
+    <circle cx="18" cy="18" r="4.5" fill="#ef4444" />
+    <circle cx="32" cy="18" r="4.5" fill="#f59e0b" />
+    <circle cx="46" cy="18" r="4.5" fill="#10b981" />
+    <line x1="0" y1="32" x2="280" y2="32" stroke="#f1f5f9" stroke-width="1.5" />
+
+    <!-- Left Sidebar Wireframe -->
+    <rect x="16" y="44" width="50" height="8" rx="4" fill="#2563eb" />
+    <rect x="16" y="58" width="42" height="6" rx="3" fill="#cbd5e1" />
+    <rect x="16" y="70" width="48" height="6" rx="3" fill="#cbd5e1" />
+    <rect x="16" y="82" width="36" height="6" rx="3" fill="#cbd5e1" />
+
+    <!-- Top Dashboard Header Bar -->
+    <rect x="80" y="44" width="95" height="8" rx="4" fill="#2563eb" />
+
+    <!-- Dashboard Widget Cards -->
+    <rect x="80" y="60" width="52" height="52" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+    <rect x="86" y="66" width="26" height="32" rx="5" fill="#2563eb" />
+
+    <rect x="140" y="60" width="52" height="52" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+    <rect x="200" y="60" width="52" height="52" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+
+    <!-- Analytics Chart Area -->
+    <rect x="80" y="124" width="180" height="96" rx="8" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1" />
+    
+    <!-- Chart Grid Lines -->
+    <line x1="80" y1="152" x2="260" y2="152" stroke="#e2e8f0" stroke-dasharray="3 3" stroke-width="0.8" />
+    <line x1="80" y1="182" x2="260" y2="182" stroke="#e2e8f0" stroke-dasharray="3 3" stroke-width="0.8" />
+
+    <!-- Shaded Area Under Curve -->
+    <path d="M 85 204 L 115 190 L 145 195 L 180 165 L 215 172 L 250 142 L 250 212 L 85 212 Z" fill="#2563eb" fill-opacity="0.1" />
+
+    <!-- Growth Curve -->
+    <path class="pulse-line" d="M 85 204 L 115 190 L 145 195 L 180 165 L 215 172 L 250 142" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Peak Circle -->
+    <circle cx="250" cy="142" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2" />
+  </g>
+
+  <!-- iPhone Mockup (Overlapping right side cleanly) -->
+  <g transform="translate(1015, 30)" filter="url(#phone-depth)">
+    <!-- Chassis -->
+    <rect width="124" height="255" rx="26" fill="#0f172a" />
+    <rect x="3" y="3" width="118" height="249" rx="23" fill="#ffffff" />
+
+    <!-- Dynamic Island / Speaker Notch -->
+    <rect x="46" y="10" width="32" height="8" rx="4" fill="#0f172a" />
+
+    <!-- Mobile UI Content -->
+    <circle cx="30" cy="40" r="13" fill="#2563eb" />
+    <rect x="52" y="34" width="50" height="7" rx="3.5" fill="#0f172a" />
+    <rect x="52" y="45" width="38" height="5" rx="2.5" fill="#94a3b8" />
+
+    <!-- Chat / Notification Cards -->
+    <rect x="14" y="66" width="96" height="24" rx="7" fill="#eff6ff" />
+    <rect x="22" y="74" width="60" height="5" rx="2.5" fill="#2563eb" />
+    <rect x="22" y="81" width="40" height="3" rx="1.5" fill="#93c5fd" />
+
+    <rect x="14" y="96" width="96" height="24" rx="7" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1" />
+    <rect x="22" y="104" width="52" height="5" rx="2.5" fill="#64748b" />
+    <rect x="22" y="111" width="32" height="3" rx="1.5" fill="#cbd5e1" />
+
+    <!-- Mobile Action Button -->
+    <rect x="14" y="210" width="96" height="26" rx="13" fill="#2563eb" />
+    <rect x="38" y="221" width="48" height="4" rx="2" fill="#ffffff" />
+
+    <!-- Home Indicator -->
+    <rect x="46" y="244" width="36" height="3" rx="1.5" fill="#94a3b8" />
+  </g>
+</svg>

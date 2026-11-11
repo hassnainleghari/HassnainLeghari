@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 52" width="100%" height="52">
+  <defs>
+    <filter id="typing-shadow" x="-5%" y="-20%" width="110%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <style>
+    .typing-box {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Fira Code', monospace, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .cursor {
+      animation: blink 0.85s infinite;
+      fill: #2563eb;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes cycle-1 {
+      0%, 28% { opacity: 1; }
+      32%, 100% { opacity: 0; }
+    }
+    @keyframes cycle-2 {
+      0%, 31% { opacity: 0; }
+      35%, 62% { opacity: 1; }
+      66%, 100% { opacity: 0; }
+    }
+    @keyframes cycle-3 {
+      0%, 65% { opacity: 0; }
+      69%, 96% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .c1 { animation: cycle-1 10.5s infinite; }
+    .c2 { animation: cycle-2 10.5s infinite; }
+    .c3 { animation: cycle-3 10.5s infinite; }
+  </style>
+
+  <rect width="100%" height="100%" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#typing-shadow)" />
+
+  <g transform="translate(24, 32)" class="typing-box">
+    <!-- Blue prompt icon -->
+    <text x="0" y="0" fill="#2563eb" font-weight="800">❯&nbsp;</text>
+    <g transform="translate(24, 0)">
+      <text class="c1" x="0" y="0" fill="#0f172a">I Help Businesses Automate Workflows &amp; Scale Without Extra Hires</text>
+      <text class="c2" x="0" y="0" fill="#2563eb">Web &amp; Android Developer | Workflows that run 24/7 at zero extra cost</text>
+      <text class="c3" x="0" y="0" fill="#0f172a">Turning Manual Ops into Autonomous Systems | Entrepreneur</text>
+    </g>
+    <rect class="cursor" x="710" y="-14" width="8" height="18" rx="2" />
+  </g>
+</svg>
